@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta information for character set and viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
     <title>Flye Assignment</title>
 
+    <!-- Link to external CSS file (index.css) -->
     <link rel="stylesheet" href="index.css" />
-    <!--  BOOTSTRAP -->
+
+    <!-- Bootstrap CSS from CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,7 +18,7 @@
       crossorigin="anonymous"
     />
 
-    <!-- FontAwesome -->
+    <!-- FontAwesome CSS from CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -24,8 +28,10 @@
     />
   </head>
   <body>
+    <!-- Navigation bar with Bootstrap styles -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
+        <!-- Toggle button for off-canvas menu -->
         <button
           class="navbar-brand btn mx-2"
           type="button"
@@ -36,9 +42,12 @@
           <i class="fa-solid fa-bars"></i>
         </button>
 
+        <!-- GitHub icon as a link to the homepage -->
         <a class="navbar-brand mx-2" href="#"
           ><i class="fa-brands fa-github"></i
         ></a>
+
+        <!-- Standard Bootstrap navbar toggler button -->
         <button
           class="navbar-toggler"
           type="button"
@@ -50,9 +59,12 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- User's name and search form -->
         <h6>Mithilesh689</h6>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <!-- Dropdown button for additional actions -->
             <li class="nav-item dropdown d-flex align-items-center">
               <button
                 class="btn dropdown-toggle"
@@ -62,6 +74,7 @@
               >
                 <i class="fa-solid fa-plus"></i>
               </button>
+              <!-- Dropdown menu with actions -->
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -70,6 +83,8 @@
                 </li>
               </ul>
             </li>
+
+            <!-- Navigation items including a button and a link -->
             <li class="nav-item">
               <a class="nav-link border rounded px-2 py-1 mx-3" href="#"
                 ><i class="fa-regular fa-circle-dot"></i
@@ -79,6 +94,7 @@
               <a class="nav-link" href="#"> </a>
             </li>
           </ul>
+          <!-- Search form -->
           <form class="d-flex" role="search">
             <input
               class="form-control me-2"
@@ -93,6 +109,7 @@
       </div>
     </nav>
 
+    <!-- Off-canvas menu -->
     <div
       class="offcanvas offcanvas-start"
       data-bs-scroll="true"
@@ -104,6 +121,7 @@
         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
           Backdrop with scrolling
         </h5>
+        <!-- Close button for the off-canvas menu -->
         <button
           type="button"
           class="btn-close"
@@ -116,20 +134,26 @@
       </div>
     </div>
 
+    <!-- Main content area -->
     <main>
       <div class="container-fluid m-0 p-0">
         <div class="row m-0 p-0">
+          <!-- Sidebar with user information -->
           <div class="col-3">
             <div class="icon-class"><i class="fa-brands fa-gitkraken"></i></div>
             <div class="w-75 text-start"><h6>Mithilesh689</h6></div>
+            <!-- Button to edit user profile -->
             <div class="btn btn-outline-secondary border-2 border w-75">
               Edit Profile
             </div>
           </div>
+          <!-- Main content area with user repositories -->
           <div class="col-9">
             <h6>Popular Repositories</h6>
             <div class="row m-0">
+              <!-- Placeholder for a list of repositories -->
               <div id="repoList" class="repo-grid align-top"></div>
+              <!-- Pagination section -->
               <div
                 id="pagination"
                 class="pagination d-flex justify-content-center align-self-end"
@@ -140,8 +164,7 @@
       </div>
     </main>
 
-
+    <!-- External JavaScript file (server.js) -->
     <script src="./server.js"></script>
-    
   </body>
 </html>
