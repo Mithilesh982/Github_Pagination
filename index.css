@@ -1,0 +1,70 @@
+.navbar .btn{
+    padding: 4px 8px;
+    border: 1px solid grey;
+}
+
+.navbar a i{
+    font-size: 2rem;
+}
+
+
+.navbar .navbar-collapse ul li i{
+    font-size: 1rem;
+    color: grey;
+
+}
+
+main .container-fluid{
+    min-height: 80vh;
+}
+
+main .container-fluid .col-3{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    min-height: 80vh;
+}
+
+main .container-fluid .col-3 .icon-class{
+    border: 1px solid grey;
+    padding: 40px 25px;
+    border-radius: 80%;
+}
+main .container-fluid .col-3 i{
+    font-size: 15rem;
+}
+main .container-fluid .col-9 ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  main .container-fluid .col-9 .repo-grid li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .repo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .pagination {
+    margin-top: 20px;
+  }
+
+  .page-link {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  /* Add styles for languages with background blue */
+ li .languages {
+background-color: rgba(0, 107, 107, 0.297);
+  }
